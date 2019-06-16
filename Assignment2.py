@@ -35,16 +35,13 @@ print("Answer to number 4: ")
 print(l)
 
 # number 5
-
+import copy
 print("Answer to number 5: ")
 original_list = list(range(1, 20))
 print("original list is", original_list)
 
-new_list = []
-
-for i in original_list:
-    y = i * 3
-    new_list.append(y)
+list_copy = copy.deepcopy(original_list)
+new_list = [i*3 for i in list_copy]
 print("new list is ", new_list)
 
 # number 6
