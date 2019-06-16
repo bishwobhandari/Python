@@ -1,0 +1,18 @@
+Deep copy - Deep copy is a process in which the copying process occurs 
+	recursively. It means first constructing a new collection object and 
+	then recursively populating it with copies of the child objects found 
+	in the original. 
+
+	A deep copy of an object will recursively clone child objects. 
+	The clone is fully independent of the original, but creating a deep copy is slower
+
+
+	
+
+
+Shallow copy - A shallow copy means constructing a new collection object and then populating 
+		it with references to the child objects found in the original. The copying 
+		process does not recurse and therefore won’t create copies of the child objects 
+		themselves. 	
+		Making a shallow copy of an object won’t clone child objects. Therefore, 
+		the copy is not fully independent of the original.
